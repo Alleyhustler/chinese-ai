@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幽冥 AI 聊天</title> <!-- Updated title -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Lilita+One&family=Noto+Serif+SC:wght@200..900&family=Rubik+Broken+Fax&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <!-- Intro Screen -->
+    <div class="intro-screen">
+        <div class="intro-content">
+            <div class="intro-circle"></div>
+            <h1 class="intro-text">进入领域...</h1>
+        </div>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="socials">
+        <a href="https://twitter.com/yourusername" target="_blank" class="social-button twitter">
+            <span>推特</span> <!-- Twitter in Chinese -->
+        </a>
+        <a href="https://t.me/yourusername" target="_blank" class="social-button telegram">
+            <span>电报</span> <!-- Telegram in Chinese -->
+        </a>
+        <a href="https://weixin.qq.com/yourusername" target="_blank" class="social-button wechat">
+            <span>微信</span> <!-- WeChat in Chinese -->
+        </a>
+        <a href="https://pumpfun.com/yourproject" target="_blank" class="social-button pumpfun">
+            <span>泵趣</span> <!-- Pumpfun in Chinese (approximated) -->
+        </a>        
+    </div>
+
+    <!-- Tunnel Effect Screen -->
+    <div class="tunnel-screen"></div>
+
+    <!-- Chat Container -->
+    <div class="aura"></div>
+    <div class="container">
+        <header>
+            <h1>幽冥 AI 聊天</h1> <!-- Updated header -->
+            <p class="subtitle">古老的智慧在等待...</p> <!-- "Ancient wisdom is waiting..." -->
+        </header>
+        <div class="chat-window">
+            <div class="messages" id="chatMessages">
+                <!-- Welcome Message -->
+            </div>
+            <div class="typing-indicator" id="typingIndicator">幽冥 AI 正在思考...</div> <!-- "幽冥 AI is thinking..." -->
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="请输入您的消息..." aria-label="User Message Input">
+                <button id="sendButton" title="Send your message into the unknown" aria-label="Send Message">发送</button>
+            </div>
+        </div>
+        <div class="lanterns">
+            <div class="lantern lantern1"></div>
+            <div class="lantern lantern2"></div>
+            <div class="lantern lantern3"></div>
+        </div>
+    </div>
+
+    <!-- Game Section (Near the chat) -->
+    <div class="game-container">
+        <h2>猜汉字游戏</h2> <!-- "Guess the Chinese Character Game" -->
+        <p>猜一猜这个汉字是什么意思:</p> <!-- "Guess what this Chinese character means:" -->
+        <div id="gameHint" class="game-hint"></div>
+        <input type="text" id="userGuess" placeholder="请输入你的答案..." aria-label="Your Guess">
+        <button id="submitGuess" aria-label="Submit Guess">提交</button>
+        <div id="gameFeedback" class="game-feedback"></div>
+        <div id="score">得分: 0</div> <!-- "Score: 0" -->
+    </div>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="mystical_background.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
